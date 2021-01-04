@@ -1,6 +1,8 @@
 <template>
   <view class="index">
-    <AtNoticebar>传奇、雷电、传奇国王宝箱图片暂未找到，看文字即可。</AtNoticebar>
+    <AtNoticebar marquee>
+      如不是通过搜索"千成林"小程序使用的可能为体验版，体验版不稳定，可搜索"千成林"使用正式版
+    </AtNoticebar>
     <AtSegmentedControl
       :on-click="handleClick"
       :current="current1"
@@ -212,7 +214,7 @@
           <view class="content">
             <image
               class="img"
-              :src="require('@/assets/chuanqi.png')"
+              :src="require('@/assets/ld.png')"
               mode="widthFix"
             />
 
@@ -254,7 +256,7 @@
           <view class="content">
             <image
               class="img"
-              :src="require('@/assets/chuanqi.png')"
+              :src="require('@/assets/cqgw.jpg')"
               mode="widthFix"
             />
 
@@ -433,7 +435,6 @@ export default {
     AtSegmentedControl,
     AtForm,
     AtInputNumber,
-    AtInput,
     AtButton,
     AtList,
     AtListItem,
@@ -544,5 +545,8 @@ export default {
       this.xingjiabi = ''
     },
   },
+  onHide() {
+    this.reset()
+  }
 }
 </script>
