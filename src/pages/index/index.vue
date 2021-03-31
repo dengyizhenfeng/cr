@@ -1,7 +1,7 @@
 <template>
   <view class="index">
     <AtNoticebar marquee>
-      如不是通过搜索"千成林"小程序使用的可能为体验版，体验版不稳定，可搜索"千成林"使用正式版
+      版本新增魔法物品之后，之前计算方式均不再适用，新版升级会尽快开发。。。
     </AtNoticebar>
     <AtSegmentedControl
       :on-click="handleClick"
